@@ -1,7 +1,7 @@
 # U2GB-Ejercicios-Guiados-2
-## Actividad 1 Ejercicio de Lista Enlazada Simple con visuAlgo
+## Actividad  Ejercicio de Lista Enlazada Simple con visuAlgo
 #### El archivo pdf con la actividad fue incluido en los archivos de este repositorio.
-## Actividad 2 Lista Encantada Humana en Java
+## Actividad  Lista Encantada Humana en Java
 #### Evidencia en Imagenes de participacion en la actividad Lista Humana 
 
 | Imagenes de Evidencia        | Cierre Reflexivo de la Actividad |
