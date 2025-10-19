@@ -11,3 +11,4 @@
 | <img src="https://github.com/user-attachments/assets/6eceea7e-ab34-4d81-a727-c0c9f51e3524" alt="Alt Text" width="200" height="300"> | 
 
 ## Actividad  " Práctica Manual y Algorítmica Lista."
+#### El archivo pdf con la actividad fue incluido en los archivos de este repositorio.
