@@ -4,7 +4,7 @@
 
 | Imagen        | 
 | ------------- |
-| <img src="[https://github.com/user-attachments/assets/8ad22b95-21ba-46ff-9250-6e4098ac1b5c]" alt="Alt Text" width="200" height="200"> | 
+| <img src="https://github.com/user-attachments/assets/8ad22b95-21ba-46ff-9250-6e4098ac1b5c" alt="Alt Text" width="200" height="200"> | 
 | col 2 is      | 
 | zebra stripes | 
 
