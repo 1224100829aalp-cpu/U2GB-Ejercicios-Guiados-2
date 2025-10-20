@@ -20,7 +20,78 @@
 | <img src="https://github.com/user-attachments/assets/a869cfcb-1d57-4a36-ac78-cdd3ed3dc5c2" alt="Alt Text" width="200" height="200"> |
 | <img src="https://github.com/user-attachments/assets/4102cc1b-2678-4b78-a6b3-d76e5db9adb7" alt="Alt Text" width="200" height="200"> |
 ### Codigo en java
+##### Nodo Lista Simple
+```javascript
+package listas;
 
+/**
+ *
+ * @author angellunaperez
+ * En esta clase de java se declara el nodo
+ * para la lista simplemenete enlazada
+ */
+// Clase Nodo para Lista Simple 
+public class Nodo<T> {
+    public T dato;
+    public Nodo<T> siguiente;
+
+    public Nodo(T dato) {
+        this.dato = dato;
+        this.siguiente = null;
+    }
+}
+```
+##### Usos de la Lista Simple
+```javascript
+package listas;
+
+/**
+ *
+ * @author angellunaperez
+ *  En esta clase se declara los metodos
+ * para la lista simplemente enlazada
+ * insertar, eliminar y mostrar
+ */
+
+public class ListaSimple<T> {
+    private Nodo<T> inicio;
+    private int tamanio;
+
+    public ListaSimple() {
+        this.inicio = null;
+        this.tamanio = 0;
+    }
+
+    // --- MÉTODOS DE INSERCION ---
+    public void insertarAlInicio(T dato) {
+        Nodo<T> nuevoNodo = new Nodo<>(dato);
+        
+        // El siguiente del nuevo nodo es el inicio actual
+        nuevoNodo.siguiente = inicio; 
+        
+        // Actualizar el inicio de la lista
+        inicio = nuevoNodo;
+        tamanio++;
+    }
+
+    // --- MÉTODOS DE ELIMINACIÓN ---
+    public T eliminarAlInicio() {
+        if (inicio == null) {
+            System.out.println("La lista está vacía.");
+            return null; // O lanzar una excepción
+        }
+        
+        T datoEliminado = inicio.dato;
+        
+        // Mover el inicio al siguiente nodo
+        inicio = inicio.siguiente; 
+        tamanio--;
+        
+        return datoEliminado;
+    }
+
+}
+```
 ##### Nodo Lista Doble
  ```javascript
 package listas;
