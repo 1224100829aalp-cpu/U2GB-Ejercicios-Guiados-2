@@ -271,3 +271,6 @@ public class ListaCircularSimple<T> {
 
 }
 ```
+## U2ACT4 Ejercicio de Pila con VisuAlgo
+### Reflexion Final
+<img src="https://github.com/user-attachments/assets/cfccbfbc-b14a-4aa5-88fd-6f11e9dc9a6b" alt="Alt Text" width="200" height="200"> 
