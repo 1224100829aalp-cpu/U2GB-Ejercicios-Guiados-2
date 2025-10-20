@@ -1,4 +1,4 @@
-# U2GB-Ejercicios-Guiados-2
+[Nodo.java](https://github.com/user-attachments/files/22994983/Nodo.java)# U2GB-Ejercicios-Guiados-2
 ## U2ACT1 Actividad  "Ejercicio de Lista Enlazada Simple con visuAlgo."
 #### El archivo pdf con la actividad fue incluido en los archivos de este repositorio.
 
@@ -21,6 +21,46 @@
 | <img src="https://github.com/user-attachments/assets/4102cc1b-2678-4b78-a6b3-d76e5db9adb7" alt="Alt Text" width="200" height="200"> |
 ### Codigo en java
 
+##### Nodo Lista Doble
  ```javascript
+package listas;
+//@author: ANGEL ALFREDO LUNA PEREZ
+//En esta clase se declara el nodo
+//para la lista doble.
+public class Nodo<T> {
+    private T dato;
+    private Nodo<T> siguiente;
+    private Nodo<T> anterior;
+
+    public Nodo(T dato) {
+        this.dato = dato;
+        this.siguiente = null; 
+        this.anterior = null; 
+    }
+
+    public T getDato() {
+        return dato;
+    }
+
+    public void setDato(T dato) {
+        this.dato = dato;
+    }
+
+    public Nodo<T> getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Nodo<T> siguiente) {
+        this.siguiente = siguiente;
+    }
+
+    public Nodo<T> getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(Nodo<T> anterior) {
+        this.anterior = anterior;
+    }
+}
 
 ```
