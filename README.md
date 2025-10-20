@@ -12,7 +12,7 @@
 
 ## U2ACT3 Actividad  " Práctica Manual y Algorítmica Lista."
 #### El archivo pdf con la actividad fisica (de cada tipo de lista) fue incluido en los archivos de este repositorio
-### Evidencia de Pseudocodigo y Reflexion Final\
+### Evidencia de Pseudocodigo y Reflexion Final
 | Pseudocodigos escritos | Reflexion final |
 | ------------- |:-------------:| 
 | <img src="https://github.com/user-attachments/assets/722e49ef-5277-4845-b2ee-bb32308f149e" alt="Alt Text" width="300" height="300"> |  <img src="https://github.com/user-attachments/assets/fbedb678-495c-4e76-86e9-b9e791d937a1" alt="Alt Text" width="300" height="400"> |
