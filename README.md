@@ -135,7 +135,7 @@ public class Nodo<T> {
 }
 
 ```
-###### Usos de la lista doble 
+##### Usos de la lista doble 
 ```javascript
 
 package listas;
@@ -212,7 +212,7 @@ package listas;
 }
 
 ```
-###### Nodo y usos de la lista circular (se reuso el nodo de la simple) 
+##### Nodo y usos de la lista circular (se reuso el nodo de la simple) 
 ```javascript
 
 package listas;
