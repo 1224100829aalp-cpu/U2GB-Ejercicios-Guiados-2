@@ -1,4 +1,3 @@
-[Nodo.java](https://github.com/user-attachments/files/22994983/Nodo.java)# U2GB-Ejercicios-Guiados-2
 ## U2ACT1 Actividad  "Ejercicio de Lista Enlazada Simple con visuAlgo."
 #### El archivo pdf con la actividad fue incluido en los archivos de este repositorio.
 
