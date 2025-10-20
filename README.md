@@ -15,7 +15,7 @@
 ### Evidencia de Pseudocodigo y Reflexion Final\
 | Pseudocodigos escritos | Reflexion final |
 | ------------- |:-------------:| 
-| <img src="https://github.com/user-attachments/assets/722e49ef-5277-4845-b2ee-bb32308f149e" alt="Alt Text" width="300" height="300"> |  <img src="" alt="Alt Text" width="200" height="200"> |
+| <img src="https://github.com/user-attachments/assets/722e49ef-5277-4845-b2ee-bb32308f149e" alt="Alt Text" width="300" height="300"> |  <img src="https://github.com/user-attachments/assets/fbedb678-495c-4e76-86e9-b9e791d937a1" alt="Alt Text" width="300" height="400"> |
 | <img src="https://github.com/user-attachments/assets/23897172-2d0e-4cfa-99d1-fd5b947d4acd" alt="Alt Text" width="300" height="300"> | 
 | <img src="https://github.com/user-attachments/assets/a869cfcb-1d57-4a36-ac78-cdd3ed3dc5c2" alt="Alt Text" width="200" height="200"> |
 | <img src="https://github.com/user-attachments/assets/4102cc1b-2678-4b78-a6b3-d76e5db9adb7" alt="Alt Text" width="200" height="200"> |
