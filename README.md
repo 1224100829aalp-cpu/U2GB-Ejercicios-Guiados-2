@@ -11,5 +11,12 @@
 | <img src="https://github.com/user-attachments/assets/6eceea7e-ab34-4d81-a727-c0c9f51e3524" alt="Alt Text" width="200" height="300"> | 
 
 ## U2ACT3 Actividad  " Práctica Manual y Algorítmica Lista."
-#### El archivo pdf con la actividad fue incluido en los archivos de este repositorio.
+#### El archivo pdf con la actividad fisica (de cada tipo de lista) fue incluido en los archivos de este repositorio
+### Evidencia de Pseudocodigo y Reflexion Final\
+
 ### Codigo
+| Tables        | Are           |
+| ------------- |:-------------:| 
+| col 3 is      | right-aligned | 
+| col 2 is      | centered      | 
+| zebra stripes | are neat      |
