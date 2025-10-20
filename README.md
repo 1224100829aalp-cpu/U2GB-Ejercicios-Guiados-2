@@ -212,3 +212,63 @@ package listas;
 }
 
 ```
+###### Nodo y usos de la lista circular (se reuso el nodo de la simple) 
+```javascript
+
+package listas;
+
+/**
+ *
+ * @author angellunaperez
+ * En esta clase se declara los metodos y usos
+ * para la lista doblemente enlazada
+ * insertar, eliminar y mostrar
+ * reutilize la clase Nodo <T> de la Lista Simple
+ */
+
+public class ListaCircularSimple<T> {
+    private Nodo<T> ultimo; // Puntero al último nodo
+    private int tamanio;
+
+    public ListaCircularSimple() {
+        this.ultimo = null;
+        this.tamanio = 0;
+    }
+
+    // --- MÉTODOS DE INSERCION ---
+    public void agregarAlFinal(T dato) {
+        Nodo<T> nuevoNodo = new Nodo<>(dato);
+        
+        if (ultimo == null) { // Si la lista esta vacia
+            ultimo = nuevoNodo;
+            nuevoNodo.siguiente = ultimo; // Se apunta a si mismo
+        } else {
+            nuevoNodo.siguiente = ultimo.siguiente; // El nuevo nodo apunta al inicio (ultimo.siguiente)
+            ultimo.siguiente = nuevoNodo;           // El ultimo nodo actual apunta al nuevo
+            ultimo = nuevoNodo;                     // El nuevo nodo es el nuevo último
+        }
+        tamanio++;
+    }
+
+    // --- MÉTODOS DE ELIMINACIÓN---
+    public T eliminarAlInicio() {
+        if (ultimo == null) {
+            System.out.println("La lista está vacía.");
+            return null;
+        }
+
+        Nodo<T> inicioActual = ultimo.siguiente;
+        T datoEliminado = inicioActual.dato;
+        
+        if (inicioActual == ultimo) { // Si solo hay un nodo
+            ultimo = null;
+        } else {
+            // El 'ultimo' apunta al siguiente del nodo a eliminar
+            ultimo.siguiente = inicioActual.siguiente;
+        }
+        tamanio--;
+        return datoEliminado;
+    }
+
+}
+```
