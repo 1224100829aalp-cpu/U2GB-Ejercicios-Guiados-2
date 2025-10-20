@@ -64,3 +64,80 @@ public class Nodo<T> {
 }
 
 ```
+###### Usos de la lista doble 
+```javascript
+
+package listas;
+
+/**
+ *
+ * @author angellunaperez
+ * En esta clase se declara los metodos
+ * para la lista doblemente enlazada
+ * insertar, eliminar y mostrar
+ */
+    public class ListaDoble<T> {
+    private NodoDoble<T> inicio;
+    private NodoDoble<T> fin; // Útil para la lista doble
+    private int tamaño;
+
+    public ListaDoble() {
+        this.inicio = null;
+        this.fin = null;
+        this.tamaño = 0;
+    }
+
+    // --- MÉTODOS DE INSERCIÓN  ---
+    public void insertarAlInicio(T dato) {
+        NodoDoble<T> nuevoNodo = new NodoDoble<>(dato);
+        
+        if (inicio == null) { // Si la lista está vacía
+            inicio = nuevoNodo;
+            fin = nuevoNodo;
+        } else {
+            nuevoNodo.siguiente = inicio; // El nuevo nodo apunta al inicio actual
+            inicio.anterior = nuevoNodo;  // El inicio actual apunta al nuevo nodo como anterior
+            inicio = nuevoNodo;           // El nuevo nodo es el nuevo inicio
+        }
+        tamaño++;
+    }
+
+    // --- MÉTODOS DE ELIMINACIÓN  ---
+    public boolean eliminarPorValor(T dato) {
+        NodoDoble<T> actual = inicio;
+        
+        while (actual != null && !actual.dato.equals(dato)) {
+            actual = actual.siguiente;
+        }
+
+        if (actual == null) { // El nodo no se encontró
+            return false;
+        }
+
+        // Caso 1: El nodo a eliminar es el 'inicio'
+        if (actual == inicio) {
+            inicio = actual.siguiente;
+            if (inicio != null) {
+                inicio.anterior = null;
+            } else { // Si la lista queda vacía
+                fin = null;
+            }
+        } 
+        // Caso 2: El nodo a eliminar es el 'fin'
+        else if (actual == fin) {
+            fin = actual.anterior;
+            fin.siguiente = null;
+        } 
+        // Caso 3: El nodo a eliminar está en medio
+        else {
+            actual.anterior.siguiente = actual.siguiente; // El anterior salta el 'actual'
+            actual.siguiente.anterior = actual.anterior; // El siguiente salta el 'actual'
+        }
+        
+        tamaño--;
+        return true;
+    }
+
+}
+
+```
