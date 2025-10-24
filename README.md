@@ -1,9 +1,9 @@
 # Ejercicios Guiados
-| Actividad | Evidencia | 
-| --- | --- |
+| Actividad | Evidencia | Archivo(s) extra(s) |
+| --- | --- | -- |
 | U2 ACT1|[U2ACT1 Ejercicio de Lista Enlazada ](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT1%20Ejercicio%20de%20Lista%20Enlazada.pdf)|
 | U2 ACT2|[U2ACT2 Lista Encantada Humana](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#evidencia-en-imagenes-de-participacion-en-la-actividad-lista-humana)|
-| U2 ACT2|[U2ACT2 Lista Encantada Humana](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#evidencia-en-imagenes-de-participacion-en-la-actividad-lista-humana)|
+| U2 ACT3|[U2ACT3 Practica Manual y algoritmica lista](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#u2act3-actividad---práctica-manual-y-algorítmica-lista)  | [El pdf](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT3%20Práctica%20Manual%20y%20Algorítmica%20Lista.docx.pdf)| 
 
 ## U2ACT2 Actividad  "Lista Encantada Humana en Java."
 #### Evidencia en Imagenes de participacion en la actividad Lista Humana 
@@ -14,7 +14,6 @@
 | <img src="https://github.com/user-attachments/assets/6eceea7e-ab34-4d81-a727-c0c9f51e3524" alt="Alt Text" width="200" height="300"> | 
 
 ## U2ACT3 Actividad  " Práctica Manual y Algorítmica Lista."
-#### El archivo pdf con la actividad fisica (de cada tipo de lista) fue incluido en los archivos de este repositorio
 ### Evidencia de Pseudocodigo y Reflexion Final
 | Pseudocodigos escritos | Reflexion final |
 | ------------- |:-------------:| 
