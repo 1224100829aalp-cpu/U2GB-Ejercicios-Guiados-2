@@ -6,6 +6,7 @@
 | U2 ACT3|[U2ACT3 Practica Manual y algoritmica lista](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#u2act3-actividad---práctica-manual-y-algorítmica-lista)---[Pdf](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT3%20Práctica%20Manual%20y%20Algorítmica%20Lista.docx.pdf)| 
 | U2 ACT2| [Especificacion de pila con Visu Algo](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT4%20Ejercicio%20de%20Pila%20con%20VisuAlgo.pdf)|
 | U2 ACT2| [Especificacion de pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#especificacion-de-pila)|
+| U2 Nearpod Pila| [U2 Evidencia Nearpod Pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2%20Ejercicio_Pilas_Nearpod.docx.pdf)|
 
 
 ## U2ACT2 Actividad  "Lista Encantada Humana en Java."
@@ -398,9 +399,6 @@ public class Main {
 
 ### Reflexion Final
 <img src="https://github.com/user-attachments/assets/cfccbfbc-b14a-4aa5-88fd-6f11e9dc9a6b" alt="Alt Text" width="200" height="200"> 
-
-## Actividad Nearpod de pilas 
-### El archivo pdf con la evidencia fue adjuntado en este github.
 
 ## Actividad Nearpod de Colas
 ### El archivo pdf con la evidencia de las respuestas fue adjuntado en este github.
