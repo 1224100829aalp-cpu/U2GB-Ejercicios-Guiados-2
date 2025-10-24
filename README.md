@@ -271,3 +271,125 @@ public class ListaCircularSimple<T> {
 
 }
 ```
+## U2ACT4 Ejercicio de Pila con VisuAlgo
+### El archivo pfd con la evidencia de la actividad fue incluido en este repositorio.
+### Codigo en java
+#### Interfaz de la pila
+```javascript
+package Stack;
+
+/**
+ *
+ * @author angellunaperez
+ * Una pila (stack) es una colección ordenada de
+ *elementos a los que sólo se puede acceder por un
+ *único lugar o extremo de la pila. Los elementos de la
+ *pila se añaden o quitan (borran) sólo por su parte
+ *superior (cima o tope) de la pila.
+ */
+public interface Pila<T> {
+    void push(T elemento);
+    T pop ();
+    T peek();
+    boolean estaVacia();
+}
+```
+#### Metodos de la pila
+```javascript
+package Stack;
+
+/**
+ *
+ * @author angellunaperez
+ */
+public class StackArrays<T> implements Pila <T> {
+    private T[] elements;
+    private int top;
+    
+    public StackArrays(){
+        elements =   (T[])new Object[30];
+    }
+    
+      public StackArrays(int size ){
+        elements = (T[])new Object[size];
+    }
+
+@Override
+    public void push(T elemento) {
+    if (top < elements.length - 1) {
+        for (int i = top; i >= 0; i--) {
+            elements[i + 1] = elements[i];
+        }
+        elements[0] = elemento;
+        top++;
+
+    } else {
+        System.out.println("Esta llena");
+    }
+
+    }
+
+    @Override
+   public T pop() {
+    if (top < 0) { 
+        System.out.println("La pila está vacía, no se puede extraer ningún elemento.");
+        return null;
+    } else {
+        T elementoQuitado = elements[top]; 
+        top--; 
+
+        return elementoQuitado;
+    }
+
+
+    }
+
+
+    @Override
+    public T peek() {
+        if (estaVacia()) {
+        System.out.println("Pila Vacía");
+        }
+        System.out.println("Conociendo el último de la pila");
+       return (T) elements[top];
+
+    }
+
+    @Override
+    public boolean estaVacia() {
+        return top ==0;
+    }
+  
+    
+
+}
+```
+#### Clase Main
+```javascript
+package Stack;
+
+/**
+ *
+ * @author angellunaperez
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        StackArrays<String> animales = new StackArrays<String>();
+        animales.push("Gato");
+        animales.push ("Perro");
+        animales.push("Leon");
+        
+        System.out.println(animales.pop());
+        System.out.println(animales.pop());
+        System.out.println(animales.pop());
+    }
+    
+}
+```
+
+### Reflexion Final
+<img src="https://github.com/user-attachments/assets/cfccbfbc-b14a-4aa5-88fd-6f11e9dc9a6b" alt="Alt Text" width="200" height="200"> 
