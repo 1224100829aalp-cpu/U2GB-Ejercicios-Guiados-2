@@ -398,7 +398,7 @@ public class Main {
 ### El archivo pdf con la evidencia fue adjuntado en este github.
 
 ## Actividad Nearpod de Colas
-## El archivo pdf con la evidencia de las respuestas fue adjuntado en este github.
+### El archivo pdf con la evidencia de las respuestas fue adjuntado en este github.
 ### Codigo creado durante la actividad
 
 
