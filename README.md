@@ -3,9 +3,7 @@
 | --- | --- |
 | U2 ACT1|[U2ACT1 Ejercicio de Lista Enlazada ](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT1%20Ejercicio%20de%20Lista%20Enlazada.pdf)|
 | U2 ACT2|[U2ACT2 Lista Encantada Humana](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#evidencia-en-imagenes-de-participacion-en-la-actividad-lista-humana)|
-
-## U2ACT1 Actividad  "Ejercicio de Lista Enlazada Simple con visuAlgo."
-#### El archivo pdf con la actividad fue incluido en los archivos de este repositorio.
+| U2 ACT2|[U2ACT2 Lista Encantada Humana](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#evidencia-en-imagenes-de-participacion-en-la-actividad-lista-humana)|
 
 ## U2ACT2 Actividad  "Lista Encantada Humana en Java."
 #### Evidencia en Imagenes de participacion en la actividad Lista Humana 
