@@ -393,3 +393,13 @@ public class Main {
 
 ### Reflexion Final
 <img src="https://github.com/user-attachments/assets/cfccbfbc-b14a-4aa5-88fd-6f11e9dc9a6b" alt="Alt Text" width="200" height="200"> 
+
+## Actividad Nearpod de pilas 
+### El archivo pdf con la evidencia fue adjuntado en este github.
+
+## Actividad Nearpod de Colas
+## El archivo pdf con la evidencia de las respuestas fue adjuntado en este github.
+### Codigo creado durante la actividad
+
+
+
