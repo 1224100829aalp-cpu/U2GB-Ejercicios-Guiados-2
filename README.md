@@ -1,3 +1,7 @@
+# Ejercicios Guiados
+| Actividad | Evidencia | 
+| --- | --- |
+| U2 ACT1| [Evidencia de U2 ACT1]()|
 ## U2ACT1 Actividad  "Ejercicio de Lista Enlazada Simple con visuAlgo."
 #### El archivo pdf con la actividad fue incluido en los archivos de este repositorio.
 
