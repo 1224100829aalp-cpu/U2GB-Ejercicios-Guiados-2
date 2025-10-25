@@ -402,9 +402,255 @@ public class Main {
 ### Reflexion Final
 <img src="https://github.com/user-attachments/assets/cfccbfbc-b14a-4aa5-88fd-6f11e9dc9a6b" alt="Alt Text" width="200" height="200"> 
 
-## Actividad Nearpod de Colas
-### El archivo pdf con la evidencia de las respuestas fue adjuntado en este github.
+## Actividad en Netbeans Colas
 ### Codigo creado durante la actividad
+#### Clase Nodo
+```javascript
+package cola;
+
+/**
+ *
+ * @author angellunaperez
+ * En esta clase se crea el nodo para 
+ * el tipo de almacenamiento de datos tipo cola
+ */
+
+public class nodo<T> {
+    private T dato;
+    private nodo siguiente;
+    
+    public nodo(T data) {
+        dato = data;
+        siguiente = null;
+    }
+
+    public T getDato() {
+        return dato;
+    }
+
+    public void setDato(T dato) {
+        this.dato = dato;
+    }
+
+    public nodo getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(nodo siguiente) {
+        this.siguiente = siguiente;
+    }
+
+    @Override
+    public String toString() {
+        return "nodo{" + "dato=" + dato + ", siguiente=" + siguiente + '}';
+    }
+    
+    
+}
+```
+### Clase Cola
+```javascript
+package cola;
+
+/**
+ *
+ * @author angellunaperez
+ * En esta clase se crea la cabeza,
+ * la cola y tambien se crea una cola vacia
+ *  asi como los metodos a utilizar 
+ */
+public class Cola<T> {
+    private nodo<T> cabeza;  //Puntero al Frente
+    private nodo<T> cola; // Puntero al final
+    private int tamano; // Para llevar la cuenta del tamano
+
+public Cola (){
+    this.cabeza= null; //Cola vacia
+    this.cola= null;
+    this.tamano = 0;
+}
+
+    public nodo<T> getCabeza() {
+        return cabeza;
+    }
+
+    public void setCabeza(nodo<T> cabeza) {
+        this.cabeza = cabeza;
+    }
+
+    public nodo<T> getCola() {
+        return cola;
+    }
+
+    public void setCola(nodo<T> cola) {
+        this.cola = cola;
+    }
+
+    public int getTamano() {
+        return tamano;
+    }
+
+    public void setTamano(int tamano) {
+        this.tamano = tamano;
+    }
+    
+    //Se verifica que la cola este vacia
+    public boolean colaVacia(){
+        return cabeza ==null;
+    }
+    
+    public void insertar (T elemento) {
+        nodo<T> nuevoNodo = new nodo<>(elemento);
+        
+        if (colaVacia()){
+            cabeza = nuevoNodo;
+            cola = nuevoNodo;
+        }
+        else{
+            this.cola.setSiguiente(nuevoNodo);
+            this.cola = nuevoNodo;
+        }
+        tamano++;
+        System.out.println("-> Insertado: "+ elemento);
+        
+    }
+    
+    public T quitar() {
+    if (colaVacia()) {
+        System.out.println("Error: La cola está vacía.");
+    }
+
+    T datoQuitado = this.cabeza.getDato(); // Guardamos el dato a devolver
+
+    this.cabeza = this.cabeza.getSiguiente(); // Cabeza siguiente nodo
+
+    if (this.cabeza == null) { // Actualiza no hay elementos
+        this.cola = null;
+    }
+
+    tamano--;
+    return datoQuitado;
+}
+
+    /*
+    * Peek:
+    * Devuelve el elemento del FRENTE sin retirarlo
+    */
+    public T frente(){
+    if (colaVacia()){
+    System.out.println("Error: la cola esta vacia");
+
+        }
+
+    return this.cabeza.getDato();
+
+
+    }
+}
+```
+### Clase De Prueba (Menu)
+```javascript
+package cola;
+
+import java.util.Scanner;
+
+/**
+ *  *
+ * @author angellunaperez
+ * En esta clase principal que implementa un 
+ * menú interactivo para probar la Cola de Tareas.
+ */
+public class Prueba {
+
+    public static void main(String[] args) {
+        
+        Cola<String> colaTareas = new Cola<>();
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        System.out.println("--- GESTIÓN DE COLA DE TAREAS (FIFO) ---");
+
+        do {
+            // Mostrar el menú
+            System.out.println("\n--- MENÚ DE OPERACIONES ---");
+            System.out.println("1. Insertar tarea (Enqueue)");
+            System.out.println("2. Quitar tarea (Dequeue)");
+            System.out.println("3. Consultar frente (Peek)");
+            System.out.println("4. Solicitar Tamaño");
+            System.out.println("5. Verificar si la cola está Vacía");
+            System.out.println("6. Salir");
+            System.out.print("Seleccione una opción: ");
+
+            // Leer la opción
+            if (scanner.hasNextInt()) {
+                opcion = scanner.nextInt();
+                scanner.nextLine(); // Consumir el salto de línea pendiente
+            } else {
+                System.out.println("Entrada no válida. Por favor, ingrese un número.");
+                scanner.nextLine(); // Consumir la entrada no válida
+                opcion = 0; // establecer una opción no válida para continuar el ciclo
+                continue;
+            }
+
+            switch (opcion) {
+                case 1:
+                    // Insertar Tarea
+                    System.out.print("Ingrese la descripción de la tarea: ");
+                    String tarea = scanner.nextLine();
+                    colaTareas.insertar(tarea);
+                    break;
+
+                case 2:
+                    // Quitar Tarea
+                    try {
+                        String tareaQuitada = colaTareas.quitar();
+
+                        if (tareaQuitada != null) {
+                            System.out.println("Tarea ejecutada y quitada (Dequeue): " + tareaQuitada);
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Error al quitar: La cola puede estar vacía.");
+                    }
+                    break;
+
+                case 3:
+                    // Consultar Frente
+                    String frente = colaTareas.frente();
+                    if (frente != null) {
+                        System.out.println("Tarea en el Frente (Peek): " + frente);
+                    } else {
+                        System.out.println("⚠La cola está vacía, no hay elemento al frente.");
+                    }
+                    break;
+
+                case 4:
+                    // Solicitar Tamaño
+                    System.out.println("Tamaño actual de la Cola: " + colaTareas.getTamano());
+                    break;
+
+                case 5:
+                    // Verificar si la Cola está Vacía
+                    if (colaTareas.colaVacia()) {
+                        System.out.println("La Cola está VACÍA.");
+                    } else {
+                        System.out.println("La Cola contiene " + colaTareas.getTamano() + " elementos.");
+                    }
+                    break;
+
+                case 6:
+                    // Salir
+                    System.out.println("Saliendo del programa. ¡Hasta luego!");
+                    break;
+
+                default:
+                    System.out.println("Opción no válida. Intente de nuevo.");
+            }
+        } while (opcion != 6);
+
+        scanner.close();
+    }
+}
+```
 
 
 
