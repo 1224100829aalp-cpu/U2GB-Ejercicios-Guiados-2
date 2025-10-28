@@ -8,7 +8,7 @@
 | U2 ACT2| [Especificacion de pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#especificacion-de-pila)|
 | U2 Nearpod Pila| [U2 Evidencia Nearpod Pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2%20Ejercicio_Pilas_Nearpod.docx.pdf)|
 | U2 Nearpod/Educaplay Cola| [U2 Evidencia Nearpod/ Educaplay Cola](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/Ejercicio_Colas_Nearpod.docx.pdf) -----[Codigo en java](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2#actividad-en-netbeans-colas)|
-| U2 Ejercicio de Ordenamiento por Intercambio con Tarjetas| [U2 Evidencia Ordenamienro por Burbuja]()|
+| U2 Ejercicio de Ordenamiento por Intercambio con Tarjetas| [U2 Evidencia Ordenamienro por Burbuja](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/README.md#ejercicio-de-ordenamiento-por-intercambio-con-tarjetas)|
 
 
 
