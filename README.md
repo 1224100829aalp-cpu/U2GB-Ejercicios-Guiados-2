@@ -8,7 +8,7 @@
 | U2 ACT2| [Especificacion de pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#especificacion-de-pila)|
 | U2 Nearpod Pila| [U2 Evidencia Nearpod Pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2%20Ejercicio_Pilas_Nearpod.docx.pdf)|
 | U2 Nearpod/Educaplay Cola| [U2 Evidencia Nearpod/ Educaplay Cola](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/Ejercicio_Colas_Nearpod.docx.pdf) -----[Codigo en java](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2#actividad-en-netbeans-colas)|
-|  Ejercicio de Ordenamiento por Intercambio con Tarjetas| [U2 Evidencia Ordenamienro por Burbuja]()|
+| U2 Ejercicio de Ordenamiento por Intercambio con Tarjetas| [U2 Evidencia Ordenamienro por Burbuja](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/edit/main/README.md#ejercicio-de-ordenamiento-por-intercambio-con-tarjetas)|
 
 
 
@@ -654,8 +654,10 @@ public class Prueba {
 ```
 ## Ejercicio de Ordenamiento por Intercambio con Tarjetas
 ### Evidencia de Participacion en la Actividad y Reflexion Final
-| Pseudocodigos escritos | Reflexion final |
+| Evidencia de Participacion | Notas y Reflexion Final|
 | ------------- |:-------------:| 
+|  <img src="https://github.com/user-attachments/assets/d2cd1672-57ed-4640-98a1-2aeb973c7288" alt="Alt Text" width="200" height="200"> |  <img src="https://github.com/user-attachments/assets/75726411-bc80-4120-b61b-59bed6285994" alt="Alt Text" width="200" height="200"> |
+|  <img src="https://github.com/user-attachments/assets/74f6f190-d17b-410c-8ab3-4432a38d83a5" alt="Alt Text" width="200" height="200">||
 
 
 
