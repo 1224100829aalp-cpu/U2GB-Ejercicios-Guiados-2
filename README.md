@@ -664,9 +664,9 @@ public class Prueba {
 ### Evidencia de Participacion en la Actividad y Ejercicios con las firmas para los deseos
 | Ejercicios Realizados en la Libreta | Evidencia de Participacion en la Actividad |
 |---|---|
-|<img src="https://github.com/user-attachments/assets/78be98ef-ceea-4adf-b909-cd128992adea" alt="Alt Text" width="200" height="200"> |  <img src="" alt="Alt Text" width="200" height="200">  |
-|<img src="https://github.com/user-attachments/assets/301125c7-1fbc-4e00-9f81-f06836d8381a" alt="Alt Text" width="200" height="200">  ||
-|<img src="https://github.com/user-attachments/assets/254d42d3-6fdc-4ac6-aa2a-cb0a7c70fa63" alt="Alt Text" width="200" height="200">  ||
+|<img src="https://github.com/user-attachments/assets/78be98ef-ceea-4adf-b909-cd128992adea" alt="Alt Text" width="200" height="200"> |  <img src="https://github.com/user-attachments/assets/bf7a839a-195c-4dce-a49c-b4ca9cf829c3" alt="Alt Text" width="200" height="200">  |
+|<img src="https://github.com/user-attachments/assets/301125c7-1fbc-4e00-9f81-f06836d8381a" alt="Alt Text" width="200" height="200">  |<img src="https://github.com/user-attachments/assets/fe2316b6-e6f8-4edc-a2a6-379f1cd77e23" alt="Alt Text" width="200" height="200">|
+|<img src="https://github.com/user-attachments/assets/254d42d3-6fdc-4ac6-aa2a-cb0a7c70fa63" alt="Alt Text" width="200" height="200">  |<img src="https://github.com/user-attachments/assets/7c6473ca-4a80-4e61-9234-953363368d77" alt="Alt Text" width="200" height="200">|
 
 
 
