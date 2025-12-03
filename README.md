@@ -3,10 +3,14 @@
 | --- | --- |
 | U2 ACT1|[U2ACT1 Ejercicio de Lista Enlazada ](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT1%20Ejercicio%20de%20Lista%20Enlazada.pdf)|
 | U2 ACT2|[U2ACT2 Lista Encantada Humana](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#evidencia-en-imagenes-de-participacion-en-la-actividad-lista-humana)|
-| U2 ACT3|[U2ACT3 Practica Manual y algoritmica lista](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#u2act3-actividad---práctica-manual-y-algorítmica-lista)---[Pdf](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT3%20Práctica%20Manual%20y%20Algorítmica%20Lista.docx.pdf)| 
+| U2 ACT3|[U2ACT3 Practica Manual y algoritmica lista](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#u2act3-actividad---práctica-manual-y-algorítmica-lista)-----[Pdf](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT3%20Práctica%20Manual%20y%20Algorítmica%20Lista.docx.pdf)| 
 | U2 ACT2| [Especificacion de pila con Visu Algo](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2ACT4%20Ejercicio%20de%20Pila%20con%20VisuAlgo.pdf)|
 | U2 ACT2| [Especificacion de pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/tree/main?tab=readme-ov-file#especificacion-de-pila)|
 | U2 Nearpod Pila| [U2 Evidencia Nearpod Pila](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/U2%20Ejercicio_Pilas_Nearpod.docx.pdf)|
+| U2 Nearpod/Educaplay Cola| [U2 Evidencia Nearpod/ Educaplay Cola](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/Ejercicio_Colas_Nearpod.docx.pdf) -----[Codigo en java](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2#actividad-en-netbeans-colas)|
+| U2 Ejercicio de Ordenamiento por Intercambio con Tarjetas| [U2 Evidencia Ordenamienro por Burbuja](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/README.md#ejercicio-de-ordenamiento-por-intercambio-con-tarjetas)|
+| U2 Ejercicios Guiados Ordenamiento Java | [Evidencia Ordenamiento en Java](https://github.com/1224100829aalp-cpu/U2GB-Ejercicios-Guiados-2/blob/main/README.md#ordenamiento-en-java) |
+
 
 
 ## U2ACT2 Actividad  "Lista Encantada Humana en Java."
@@ -400,9 +404,269 @@ public class Main {
 ### Reflexion Final
 <img src="https://github.com/user-attachments/assets/cfccbfbc-b14a-4aa5-88fd-6f11e9dc9a6b" alt="Alt Text" width="200" height="200"> 
 
-## Actividad Nearpod de Colas
-### El archivo pdf con la evidencia de las respuestas fue adjuntado en este github.
+## Actividad en Netbeans Colas
 ### Codigo creado durante la actividad
+#### Clase Nodo
+```javascript
+package cola;
+
+/**
+ *
+ * @author angellunaperez
+ * En esta clase se crea el nodo para 
+ * el tipo de almacenamiento de datos tipo cola
+ */
+
+public class nodo<T> {
+    private T dato;
+    private nodo siguiente;
+    
+    public nodo(T data) {
+        dato = data;
+        siguiente = null;
+    }
+
+    public T getDato() {
+        return dato;
+    }
+
+    public void setDato(T dato) {
+        this.dato = dato;
+    }
+
+    public nodo getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(nodo siguiente) {
+        this.siguiente = siguiente;
+    }
+
+    @Override
+    public String toString() {
+        return "nodo{" + "dato=" + dato + ", siguiente=" + siguiente + '}';
+    }
+    
+    
+}
+```
+### Clase Cola
+```javascript
+package cola;
+
+/**
+ *
+ * @author angellunaperez
+ * En esta clase se crea la cabeza,
+ * la cola y tambien se crea una cola vacia
+ *  asi como los metodos a utilizar 
+ */
+public class Cola<T> {
+    private nodo<T> cabeza;  //Puntero al Frente
+    private nodo<T> cola; // Puntero al final
+    private int tamano; // Para llevar la cuenta del tamano
+
+public Cola (){
+    this.cabeza= null; //Cola vacia
+    this.cola= null;
+    this.tamano = 0;
+}
+
+    public nodo<T> getCabeza() {
+        return cabeza;
+    }
+
+    public void setCabeza(nodo<T> cabeza) {
+        this.cabeza = cabeza;
+    }
+
+    public nodo<T> getCola() {
+        return cola;
+    }
+
+    public void setCola(nodo<T> cola) {
+        this.cola = cola;
+    }
+
+    public int getTamano() {
+        return tamano;
+    }
+
+    public void setTamano(int tamano) {
+        this.tamano = tamano;
+    }
+    
+    //Se verifica que la cola este vacia
+    public boolean colaVacia(){
+        return cabeza ==null;
+    }
+    
+    public void insertar (T elemento) {
+        nodo<T> nuevoNodo = new nodo<>(elemento);
+        
+        if (colaVacia()){
+            cabeza = nuevoNodo;
+            cola = nuevoNodo;
+        }
+        else{
+            this.cola.setSiguiente(nuevoNodo);
+            this.cola = nuevoNodo;
+        }
+        tamano++;
+        System.out.println("-> Insertado: "+ elemento);
+        
+    }
+    
+    public T quitar() {
+    if (colaVacia()) {
+        System.out.println("Error: La cola está vacía.");
+    }
+
+    T datoQuitado = this.cabeza.getDato(); // Guardamos el dato a devolver
+
+    this.cabeza = this.cabeza.getSiguiente(); // Cabeza siguiente nodo
+
+    if (this.cabeza == null) { // Actualiza no hay elementos
+        this.cola = null;
+    }
+
+    tamano--;
+    return datoQuitado;
+}
+
+    /*
+    * Peek:
+    * Devuelve el elemento del FRENTE sin retirarlo
+    */
+    public T frente(){
+    if (colaVacia()){
+    System.out.println("Error: la cola esta vacia");
+
+        }
+
+    return this.cabeza.getDato();
+
+
+    }
+}
+```
+### Clase De Prueba (Menu)
+```javascript
+package cola;
+
+import java.util.Scanner;
+
+/**
+ *  *
+ * @author angellunaperez
+ * En esta clase principal que implementa un 
+ * menú interactivo para probar la Cola de Tareas.
+ */
+public class Prueba {
+
+    public static void main(String[] args) {
+        
+        Cola<String> colaTareas = new Cola<>();
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        System.out.println("--- GESTIÓN DE COLA DE TAREAS (FIFO) ---");
+
+        do {
+            // Mostrar el menú
+            System.out.println("\n--- MENÚ DE OPERACIONES ---");
+            System.out.println("1. Insertar tarea (Enqueue)");
+            System.out.println("2. Quitar tarea (Dequeue)");
+            System.out.println("3. Consultar frente (Peek)");
+            System.out.println("4. Solicitar Tamaño");
+            System.out.println("5. Verificar si la cola está Vacía");
+            System.out.println("6. Salir");
+            System.out.print("Seleccione una opción: ");
+
+            // Leer la opción
+            if (scanner.hasNextInt()) {
+                opcion = scanner.nextInt();
+                scanner.nextLine(); // Consumir el salto de línea pendiente
+            } else {
+                System.out.println("Entrada no válida. Por favor, ingrese un número.");
+                scanner.nextLine(); // Consumir la entrada no válida
+                opcion = 0; // establecer una opción no válida para continuar el ciclo
+                continue;
+            }
+
+            switch (opcion) {
+                case 1:
+                    // Insertar Tarea
+                    System.out.print("Ingrese la descripción de la tarea: ");
+                    String tarea = scanner.nextLine();
+                    colaTareas.insertar(tarea);
+                    break;
+
+                case 2:
+                    // Quitar Tarea
+                    try {
+                        String tareaQuitada = colaTareas.quitar();
+
+                        if (tareaQuitada != null) {
+                            System.out.println("Tarea ejecutada y quitada (Dequeue): " + tareaQuitada);
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Error al quitar: La cola puede estar vacía.");
+                    }
+                    break;
+
+                case 3:
+                    // Consultar Frente
+                    String frente = colaTareas.frente();
+                    if (frente != null) {
+                        System.out.println("Tarea en el Frente (Peek): " + frente);
+                    } else {
+                        System.out.println("⚠La cola está vacía, no hay elemento al frente.");
+                    }
+                    break;
+
+                case 4:
+                    // Solicitar Tamaño
+                    System.out.println("Tamaño actual de la Cola: " + colaTareas.getTamano());
+                    break;
+
+                case 5:
+                    // Verificar si la Cola está Vacía
+                    if (colaTareas.colaVacia()) {
+                        System.out.println("La Cola está VACÍA.");
+                    } else {
+                        System.out.println("La Cola contiene " + colaTareas.getTamano() + " elementos.");
+                    }
+                    break;
+
+                case 6:
+                    // Salir
+                    System.out.println("Saliendo del programa. ¡Hasta luego!");
+                    break;
+
+                default:
+                    System.out.println("Opción no válida. Intente de nuevo.");
+            }
+        } while (opcion != 6);
+
+        scanner.close();
+    }
+}
+```
+## Ejercicio de Ordenamiento por Intercambio con Tarjetas
+### Evidencia de Participacion en la Actividad y Reflexion Final
+| Evidencia de Participacion | Notas y Reflexion Final|
+| ------------- | ------------- | 
+|  <img src="https://github.com/user-attachments/assets/d2cd1672-57ed-4640-98a1-2aeb973c7288" alt="Alt Text" width="200" height="200"> |  <img src="https://github.com/user-attachments/assets/75726411-bc80-4120-b61b-59bed6285994" alt="Alt Text" width="200" height="200"> |
+|  <img src="https://github.com/user-attachments/assets/74f6f190-d17b-410c-8ab3-4432a38d83a5" alt="Alt Text" width="200" height="200">||
+
+## Ordenamiento en Java
+### Evidencia de Participacion en la Actividad y Ejercicios con las firmas para los deseos
+| Ejercicios Realizados en la Libreta | Evidencia de Participacion en la Actividad |
+|---|---|
+|<img src="https://github.com/user-attachments/assets/78be98ef-ceea-4adf-b909-cd128992adea" alt="Alt Text" width="200" height="200"> |  <img src="https://github.com/user-attachments/assets/bf7a839a-195c-4dce-a49c-b4ca9cf829c3" alt="Alt Text" width="200" height="200">  |
+|<img src="https://github.com/user-attachments/assets/301125c7-1fbc-4e00-9f81-f06836d8381a" alt="Alt Text" width="200" height="200">  |<img src="https://github.com/user-attachments/assets/fe2316b6-e6f8-4edc-a2a6-379f1cd77e23" alt="Alt Text" width="200" height="200">|
+|<img src="https://github.com/user-attachments/assets/254d42d3-6fdc-4ac6-aa2a-cb0a7c70fa63" alt="Alt Text" width="200" height="200">  |<img src="https://github.com/user-attachments/assets/7c6473ca-4a80-4e61-9234-953363368d77" alt="Alt Text" width="200" height="200">|
 
 
 
